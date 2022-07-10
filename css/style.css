@@ -91,7 +91,7 @@ a#phone:hover {
 }
 
 .nav__close {
-    margin-bottom: 40%;
+    margin-bottom: 25%;
     background-color: rgba(108, 106, 106, 0.8);
     font-size: 30px;
     font-weight: 700;
@@ -100,7 +100,7 @@ a#phone:hover {
 }
 
 .header__item {
-    margin-bottom: 20%;
+    margin-bottom: 15%;
     font-size: 24px;
     line-height: 29px;
     color: #FEFFB9;
