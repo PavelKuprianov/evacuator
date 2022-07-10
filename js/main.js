@@ -39,21 +39,20 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     })
 
+    const exitWindow = () => {
+        modalS.classList.add('hidden')
+        modal.classList.add('hidden')
+        modalF.classList.add('hidden')
+    }
+
     overlay.forEach((field) => {
-        field.addEventListener('click', () => {
-                modalS.classList.add('hidden')
-                modal.classList.add('hidden')
-                modalF.classList.add('hidden')
-        })
+        field.addEventListener('click', exitWindow)
+    })
+    closButton.forEach((el) => {
+        el.addEventListener('click', exitWindow)
     })
 
-    closButton.forEach((el) => {
-        el.addEventListener('click', () => {
-            modalS.classList.add('hidden')
-            modal.classList.add('hidden')
-            modalF.classList.add('hidden')
-        })
-    })
+
 
     //Pop-up arrow and phone number when scrolling
     window.onscroll = function vverh() {

@@ -39,6 +39,7 @@ a#phone {
 
 a#phone:hover {
     transform: scale(1.2);
+    text-shadow: #28281CFF 3px 3px 3px;
 }
 
 .head {
@@ -67,8 +68,7 @@ a#phone:hover {
 .head__nav_list-item:focus,
 .head__nav_list-item:hover {
     transform: scale(1.1);
-    color: #b12c04;
-    btext-shadow: #360202 3px 3px 5px;
+    text-shadow: #360202 3px 3px 5px;
 }
 
 .header__nav2 {
@@ -456,6 +456,11 @@ a#phone:hover {
     justify-content: space-between;
 }
 
+.footer__tel_number:hover,
+.footer__tel_number:focus {
+    text-shadow: #28281CFF 3px 3px 3px;
+}
+
 .footer__address {
     font-size: 28px;
     line-height: 1.5;
@@ -473,6 +478,15 @@ a#phone:hover {
 
 .footer__social span {
     margin-bottom: 10px;
+}
+
+.social-icon > a {
+    margin-right: 15px;
+}
+
+.social-icon a svg:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 8px 5px;
 }
 
 @media (max-width: 1600px) {
