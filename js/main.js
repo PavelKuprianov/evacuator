@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //modal windows
     const modalButton = document.querySelectorAll('.more')
     const modalS = document.querySelector('.modalS')
+    const modalF = document.querySelector('.modalF')
     const modal = document.querySelector('.modal')
     const overlay = document.querySelectorAll('.overlay')
     const closButton = document.querySelectorAll('.modal__close')
@@ -27,12 +28,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     modalButton.forEach((link) => {
         link.addEventListener('click', () => {
+
             if (link.parentNode.querySelector('.item--img-btn')) {
                 modalS.classList.remove('hidden')
-            } else {
-                modal.classList.remove('hidden')
-            }
-
+            } else if (link.parentNode.querySelector('.btn-feetback')) {
+                    modalF.classList.remove('hidden')
+                } else {
+                    modal.classList.remove('hidden')
+                }
         })
     })
 
@@ -40,13 +43,16 @@ document.addEventListener('DOMContentLoaded', () => {
         field.addEventListener('click', () => {
                 modalS.classList.add('hidden')
                 modal.classList.add('hidden')
+                modalF.classList.add('hidden')
         })
     })
 
     closButton.forEach((el) => {
         el.addEventListener('click', () => {
             modalS.classList.add('hidden')
-            modal.classList.add('hidden')        })
+            modal.classList.add('hidden')
+            modalF.classList.add('hidden')
+        })
     })
 
     //Pop-up arrow and phone number when scrolling

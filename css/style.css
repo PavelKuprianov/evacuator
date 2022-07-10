@@ -7,14 +7,15 @@ a#vverh {
     right: 5px;
     bottom: 5px;
     text-decoration: none;
+    font-size: 22px;
     color: rgb(177, 14, 14);
     -webkit-transition: 1s;
     transition: 1s;
 }
 a#vverh:before {
     position: absolute;
-    content: url(http://3.bp.blogspot.com/-Q0hVWzKDCJo/Tpar8l5wvJI/AAAAAAAACZ4/LbpuEBAIQAU/s60/strelka.png);
-    margin: -55px 0 0 -12px;
+    content: url(../images/arrow_top.png);
+    margin: -101px 0 0 -12px;
 }
 a#vverh:hover {color: #000; background-color: rgba(0,0,0,.3);}
 .header {
@@ -32,7 +33,7 @@ a#phone {
     -webkit-transition: 1s;
     transition: 1s;
     z-index: 500;
-    font-size: 36px;
+    font-size: 4vw;
     font-weight: 700;
 }
 
@@ -755,6 +756,18 @@ a#phone:hover {
     font-size: 24px;
     line-height: 1.5;
     color: #FEFFB9;
+}
+
+.modal__descr_price {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #FEFFB9;
+}
+
+.modal__descr_price span {
+    font-size: 30px;
 }
 
 .modal__form {

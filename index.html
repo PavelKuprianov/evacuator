@@ -286,8 +286,34 @@
                 </div>
 
                 <div class="feedback-btn">
-                    <button class=" btn-feetback button">Оставить отзыв</button>
+                    <button class="more btn-feetback button">Оставить отзыв</button>
                 </div>
+
+                <!-- modal feedback (start) -->
+                <div class="modalF hidden">
+                    <div class="overlay"></div>
+                    <div class="modal-wrapper">
+                        <h2 class="section__title modal__title">
+                            Напишите свой отзыв
+                        </h2>
+                        <p class="modal__descr">
+                            Нам очень важно Ваше мнение
+                        </p>
+                        <button type="button" class="modal__close" aria-label="закрыть модальное окно">
+                        </button>
+                        <form class="form modal__form">
+                            <input type="text" name="name" class="input modal__input" placeholder="Ваше имя">
+                            <input type="tel" name="mail" class="input modal__input" placeholder="Номер телефона">
+                            <div class="modal-buttons">
+                                <button type="submit" class="more button modal__button">
+                                    Отправить отзыв
+                                </button>
+                            </div>
+                        </form>
+                        <!-- /.form modal__form -->
+                    </div>
+                </div>
+                <!-- modal feedback (end) -->
             </article>
         </section>
     </main>
