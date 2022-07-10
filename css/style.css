@@ -62,10 +62,13 @@ a#phone:hover {
     color: #FEFFB9;
 }
 
+.header__item:focus,
+.header__item:hover,
 .head__nav_list-item:focus,
 .head__nav_list-item:hover {
     transform: scale(1.1);
-    color: #f6f87c;
+    color: #b12c04;
+    btext-shadow: #360202 3px 3px 5px;
 }
 
 .header__nav2 {
@@ -97,7 +100,7 @@ a#phone:hover {
 }
 
 .header__item {
-    margin-bottom: 35%;
+    margin-bottom: 20%;
     font-size: 24px;
     line-height: 29px;
     color: #FEFFB9;
@@ -146,6 +149,18 @@ a#phone:hover {
 
 .head__burger {
     display: none;
+    background-color: transparent;
+    border: none;
+}
+
+.head__burger:hover svg > path {
+    stroke: #b12c04;
+    transform: scale(1.1);
+}
+
+.head__burger:focus svg > path {
+    stroke: #b12c04;
+    transform: scale(1.2);
 }
 
 .hero-field {
