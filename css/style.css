@@ -4,7 +4,7 @@ body {
 a#vverh {
     display: none;
     position: fixed;
-    right: 5px;
+    right: 1.3vw;
     bottom: 5px;
     text-decoration: none;
     font-size: 22px;
@@ -26,7 +26,7 @@ a#vverh:hover {color: #000; background-color: rgba(0,0,0,.3);}
 a#phone {
     display: none;
     position: fixed;
-    left: 25px;
+    left: 6vw;
     top: 15px;
     text-decoration: none;
     color: rgb(250, 16, 99);
@@ -35,6 +35,11 @@ a#phone {
     z-index: 500;
     font-size: 4vw;
     font-weight: 700;
+}
+
+a#phone::before {
+    content: url("../images/phone.png");
+    margin-right: 1vw;
 }
 
 a#phone:hover {
@@ -703,7 +708,6 @@ a#phone:hover {
     z-index: 210;
     max-width: 592px;
     width: 100%;
-    height: 545px;
     max-height: 100%;
     transform: translate(-50%, -50%);
     background-color: black;
@@ -806,9 +810,9 @@ a#phone:hover {
 }
 
 .modal__input {
-    width: 70%;
+    width: 85%;
     margin-bottom: 15px;
-    font-size: 20px;
+    font-size: 2em;
 }
 
 .modal__button {
